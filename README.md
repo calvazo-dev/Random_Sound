@@ -7,7 +7,7 @@ Some basic program that lets you reproduce some random audio. There are two vers
 Only linux compatible, sorry windows cock suckers ;).
 
 ## Usage
-First you must give the program the permission to work, in order to do it you must type:
+If you've just installed the executable from releases [add hyperlink to releases], then you must give the program the permission to work. In order to do it you must type:
 ```
 chmod +x random
 ```
