@@ -27,7 +27,20 @@ void play_audio_2(int argc, char *argv[]){
 }
 
 
+
+void Usage(){
+    printf("Usage: random [name_of_audio_file] ... [name_of_audio_file]");
+}
+
+
 int main(int argc, char *argv[]){
+
+    if(argc == 1){
+        Usage();
+        exit(1);
+    }
+
+
     srand(time(NULL));
 
     int r;
