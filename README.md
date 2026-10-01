@@ -11,7 +11,7 @@ First you must give the program the permission to work, in order to do it you mu
 ```
 chmod +x random
 ```
-\
+or
 ```
 chmod +x random2
 ```
