@@ -1,5 +1,5 @@
 # Random_Sound
-Some basic program that lets you reproduce some random audio. There are two versions; 
+Some basic program that lets you reproduce some random audio. There are two versions: 
 - `random`: it has already in it the naming of the files *Not recommended*
 - `random2`: when you execute it, you need to give the naming of the audio files.
 
