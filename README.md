@@ -4,7 +4,7 @@ Some basic program that lets you reproduce some random audio. There are two vers
 - `random2`: when you execute it, you need to give the naming of the audio files.
 
 ## Os
-Only linux compatible
+Only linux compatible, sorry windows cock suckers ;).
 
 ## Usage
 Introduce the name of the program followed by the name of the audio files.
