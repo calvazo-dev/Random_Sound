@@ -14,3 +14,8 @@ Introduce the name of the program followed by the name of the audio files.
 
 ## Compiling
 It already comes with a **makefile**, it lets you just type make **name of _program_** and it will compile it for you.
+For example:
+**Compile random2**:
+```
+make random2
+```
