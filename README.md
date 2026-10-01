@@ -7,6 +7,14 @@ Some basic program that lets you reproduce some random audio. There are two vers
 Only linux compatible, sorry windows cock suckers ;).
 
 ## Usage
+First you must give the program the permission to work, in order to do it you must type:
+```
+chmod +x random
+```
+\
+```
+chmod +x random2
+```
 Introduce the name of the program followed by the name of the audio files.
 ```
 ./random2 AntonioLobato.wav AntonioLobato.wav BetterCaulSaul.ogg Yoda.wav
