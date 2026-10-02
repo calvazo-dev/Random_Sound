@@ -1,6 +1,6 @@
 # Random_Sound
 Some basic program that lets you reproduce some random audio using the ffplay executable. There are two versions: 
-- `random`: it has already in it the naming of the files *Not recommended*
+- `random`: it already has the audio files in it.[Recomended only if you are compiling it manually]
 - `random2`: when you execute it, you need to give the naming of the audio files.
 
 ## OS
@@ -73,3 +73,8 @@ If you want to remove all possible compiled programs, just write:
 ```bash
 make clean
 ```
+
+## Future Plans
+- Make random be able to just look for the binaries when compiling instead of manually adding them in code.
+- In random2: being able to adjust the time to wait before each roll and the probability, not only of the audio playing but also of choosing any sound in specific.
+- Something else that I can not currently think of.
