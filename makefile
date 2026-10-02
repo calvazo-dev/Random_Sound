@@ -7,7 +7,7 @@ AUDIO_FILES = $(wildcard $(AUDIO_DIR)/*.wav) $(wildcard $(AUDIO_DIR)/*.mp3)
 AUDIO_OBJS = $(notdir $(patsubst %.wav, %.o, $(patsubst %.mp3, %.o, $(AUDIO_FILES))))
 LDFLAGS = -Wl,-z,notext
 
-all: random2
+all: random2 random
 random: $(RANDOM_DIR)/random.c $(AUDIO_OBJS)
 	gcc -o random $(RANDOM_DIR)/random.c $(AUDIO_OBJS) $(LDFLAGS)
 	rm -f $(AUDIO_OBJS)

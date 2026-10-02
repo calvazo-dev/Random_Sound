@@ -25,7 +25,7 @@ sudo apt install ffmpeg
 sudo pacman -Syu ffmpeg
 ```
 
--Fedora/Red Hat
+- Fedora/Red Hat
 Fedora already comes with a ffmpeg package.
 
 ## Instalation
@@ -50,6 +50,8 @@ For random, just type the name of the program.
 ```bash
 ./random
 ```
+>[!Warning]
+>Also a few things to be said: you can just execute the program by clicking it but take caution when doing that. As the program is an infinite loop, the only way to make it stop is by killing the process. To do so, you must execute something like pkill **name of _program_** to terminate it.
 
 ## Compiling
 For the sake of those who don't know how to compile a program, there's a **makefile**. It lets you just type make **name of _program_** and it will compile it for you.  
