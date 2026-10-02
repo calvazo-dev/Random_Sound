@@ -8,8 +8,7 @@ Some basic program that lets you reproduce some random audio. There are two vers
 >Only linux compatible, sorry windows cock suckers ;).
 
 ## Dependencies
-To use the program you must have installed ffmpeg:
-
+To use the program you must have installed ffmpeg:  
 **1. Actualitzeu els paquets**
 - Ubuntu/Debian
 ```bash
