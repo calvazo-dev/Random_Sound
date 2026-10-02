@@ -1,4 +1,4 @@
-all: random random2
+all: random2
 random: random.c
 	gcc -o random random.c
 random2:

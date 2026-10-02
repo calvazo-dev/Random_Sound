@@ -5,6 +5,7 @@
 #include <sys/wait.h>
 #include <time.h>
 
+
 void error_exit(char *msg, int exit_status){
     perror(msg);
     exit(exit_status);
