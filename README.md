@@ -75,6 +75,6 @@ make clean
 ```
 
 ## Future Plans
-- In random: be able to just look for the binaries when compiling instead of manually adding them in code.
+- In random: be able to just look for the binaries when compiling instead of manually adding them in code. Also adding the dice rolling.
 - In random2: being able to adjust the time to wait before each roll and the probability, not only of the audio playing but also of choosing any sound in specific.
 - Something else that I can not currently think of.
