@@ -1,5 +1,5 @@
 # Random_Sound
-Some basic program that lets you reproduce some random audio. There are two versions: 
+Some basic program that lets you reproduce some random audio using the ffplay executable. There are two versions: 
 - `random`: it has already in it the naming of the files *Not recommended*
 - `random2`: when you execute it, you need to give the naming of the audio files.
 
@@ -9,7 +9,7 @@ Some basic program that lets you reproduce some random audio. There are two vers
 
 ## Dependencies
 To use the program you must have installed ffmpeg:  
-**1. Actualitzeu els paquets**
+**Update packages and install the ffmpeg package**
 - Ubuntu/Debian
 ```bash
 sudo apt update
@@ -39,17 +39,17 @@ or
 ```bash
 chmod +x random2
 ```
-For random2 type the name of the program followed by the name of the audio files.
+For random2, type the name of the program followed by the name of the audio files.
 ```bash
 ./random2 AntonioLobato.wav AntonioLobato.wav BetterCaulSaul.ogg Yoda.wav
 ```
-For random just type the name of the program.
+For random, just type the name of the program.
 ```bash
 ./random
 ```
 
 ## Compiling
-It already comes with a **makefile**, it lets you just type make **name of _program_** and it will compile it for you.  
+For the sake of those who don't know how to compile a program, there's a **makefile**. It lets you just type make **name of _program_** and it will compile it for you.  
 - **Compile random2**:
 ```bash
 make random2
