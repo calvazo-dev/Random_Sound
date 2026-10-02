@@ -4,6 +4,7 @@
 #include <string.h>
 #include <sys/wait.h>
 #include <time.h>
+#include <errno.h>
 
 void error_exit(char *msg, int exit_status){
     perror(msg);
@@ -12,7 +13,15 @@ void error_exit(char *msg, int exit_status){
 
 void play_audio(char *namefile){
     execlp("ffplay", "ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet", namefile, (char*)NULL);
-    error_exit("Ha fallat la mutació a ffplay", 1);
+
+    if(errno == ENOENT){
+        error_exit("Error: 'ffmpeg' no està instal·lat o no s'ha trobat al PATH del sistema.\n", errno);
+    }
+    if(errno == EACCES){
+        error_exit("Error: el programa no té permissos per executar ffplay.\n", errno);
+    }
+    else
+        error_exit("Ha fallat la mutació a ffplay", 1);
 }
 
 void play_audio_2(int argc, char *argv[]){
@@ -29,7 +38,7 @@ void play_audio_2(int argc, char *argv[]){
 
 
 void Usage(){
-    printf("Usage: random [name_of_audio_file] ... [name_of_audio_file]");
+    printf("Usage: random2 [name_of_audio_file] ... [name_of_audio_file]\n");
 }
 
 
