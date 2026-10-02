@@ -7,6 +7,9 @@ Some basic program that lets you reproduce some random audio using the ffplay ex
 >[!IMPORTANT]
 >Only linux compatible, sorry windows cock suckers ;).
 
+## A few things to say
+Part of random.c has been written with the help of AI. Mainly all the part of converting the sound into object files and creating the audio buffer so that ffplay could read it. I can understand a part of what it is doing although I'm not an expert and I'm not exactly sure what everything does. Despite this, I'll try to learn more and more so that I can confidently say that understand and even tweak it if necessary. (I see it as copying something from stackoverflow and not understanding everything is there).
+
 ## Dependencies
 To use the program you must have installed ffmpeg:  
 **Update packages and install the ffmpeg package**

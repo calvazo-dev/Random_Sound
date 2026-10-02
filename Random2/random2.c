@@ -12,7 +12,7 @@ void error_exit(char *msg, int exit_status){
 }
 
 void play_audio(char *namefile){
-    execlp("ffplay", "ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet", namefile, (char*)NULL);
+    execlp("ffplay", "ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet", namefile, "&", (char*)NULL);
 
     if(errno == ENOENT){
         error_exit("Error: 'ffmpeg' no està instal·lat o no s'ha trobat al PATH del sistema.\n", errno);
