@@ -8,7 +8,7 @@ Some basic program that lets you reproduce some random audio using the ffplay ex
 >Only linux compatible, sorry windows cock suckers ;).
 
 ## A few things to say
-Part of random.c has been written with the help of AI. Mainly all the part of converting the sound into object files and creating the audio buffer so that ffplay could read it. I can understand a part of what it is doing although I'm not an expert and I'm not exactly sure what everything does. Despite this, I'll try to learn more and more so that I can confidently say that I understand and even tweak it if necessary. (I see it as copying something from stackoverflow and not understanding everything is there).
+Part of random.c has been written with the help of AI. Mainly all the part of converting the sound into object files and creating the audio buffer so that ffplay could read it. I can understand a part of what it is doing although I'm neither an expert nor exactly sure what everything does. Despite this, I'll try to learn more and more so that I can confidently say that I understand and even tweak it if necessary. (I see it as copying something from stackoverflow and not understanding everything is there).
 
 ## Dependencies
 To use the program you must have installed ffmpeg:  
@@ -51,20 +51,20 @@ For random, just type the name of the program.
 ./random
 ```
 >[!Warning]
->Also a few things to be said: you can just execute the program by clicking it but take caution when doing that. As the program is an infinite loop, the only way to make it stop is by killing the process. To do so, you must execute something like pkill **name of _program_** to terminate it.
+>You can just execute the program by clicking it but take caution when doing that. As the program is an infinite loop, the only way to make it stop is by killing the process. To do so, you must execute something like pkill **name of _program_** to terminate it. Do not panic if you permform it while a sound is playing, as the audio is reproduced in another process that will die when the audio ends.
 
 ## Compiling
 For the sake of those who don't know how to compile a program, there's a **makefile**. It lets you just type make **name of _program_** and it will compile it for you.  
-- **Compile random2**:
+- **Compile random2:**
 ```bash
 make random2
 ```
-- **Compile random**:
+- **Compile random:**
 ```bash
 make random
 ```
 
-- **Compile both**
+- **Compile both:**
 ```bash
 make
 ```
